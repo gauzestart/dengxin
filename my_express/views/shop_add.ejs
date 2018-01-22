@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="/stylesheets/shop_add.css" />
+	<body>
+		<div class="guanli3">
+			<p class="p1"><b>ECSHOP管理中心 - 添加新商品</b><img src="http://www.doudoufei.top/shops/admin/images/jnsy.png"><a class="commodity">商品列表</a></p>
+			<ul class="fenye">
+				<li class="white">通用信息</li>
+				<li>详细描述</li>
+				<li>其他信息</li>
+				<li>商品属性</li>
+				<li>商品相册</li>
+				<li>关联商品</li>
+				<li>配件</li>
+				<li>关联文章</li>
+			</ul>
+			<ol class="ol1">
+				<li>
+					<table class="tab2">
+						<tbody>
+							<tr>
+								<td>商品名称:</td>
+								<td><input type="text" class="txt" id="comname"></td>
+							</tr>
+							<tr>
+								<td>商品货号:</td>
+								<td><input type="text" class="txt" id="num"></td>
+							</tr>
+							<tr>
+								<td>商品分类:</td>
+								<td><select id="category">
+									<option>所有分类</option>
+									<option>钻石</option>
+									<option>裤子</option>
+									<option>休闲裤</option>
+									<option>休闲短裤</option>
+									<option>牛仔裤</option>
+									<option>西裤</option>
+									<option>牛仔中裤</option>
+									<option>休闲分裤</option>
+									<option>衬衫</option>
+									<option>短袖衬衫</option>
+									<option>长袖衬衫</option>
+									<option>外套</option>
+									<option>棉服</option>
+									<option>风衣</option>
+									<option>羽绒服</option>
+									<option>大衣</option>
+									<option>皮衣/皮草</option>
+									<option>夹克</option>
+									<option>西服</option>
+									<option>卫衣</option>
+									<option>内衣</option>
+									<option>内裤</option>
+									<option>内衣/套装</option>
+									<option>袜子</option>
+									<option>家居服</option>
+									<option>POLO衫</option>
+									<option>短袖POLO衫</option>
+									<option>长袖POLO衫</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td>扩展分类:</td>
+								<td><input type="button" value="添加" class="add"></td>
+							</tr>
+							<tr>
+								<td>商品品牌:</td>
+								<td><select id="brand">
+									<option>所有品牌</option>
+									<option>kk</option>
+									<option>溢彩年华</option>
+									<option>EVENY</option>
+									<option>圣迪奥</option>
+									<option>韩都衣舍</option>
+									<option>betu百图</option>
+									<option>艾夫斯</option>
+									<option>太平鸟</option>
+									<option>O.SA</option>
+									<option>空间大师</option>
+									<option>美好家</option>
+									<option>生活诚品</option>
+									<option>帮宝适</option>
+									<option>贝亲</option>
+									<option>雅培</option>
+									<option>好事达</option>
+									<option>千弘</option>
+									<option>美亿佳</option>
+									<option>大豪</option>
+									<option>宝优妮</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td>本店售价:</td>
+								<td><input type="text" class="txt" id="ourprice"><input type="button" value="按市场价计算"></td>
+							</tr>
+							<tr>
+								<td>会员价格:</td>
+								<td><p>注册会员<input type="text" class="hy">代销会员<input type="text" class="hy">vip<input type="text" class="hy"></p><p>会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</p></td>
+							</tr>
+							<tr>
+								<td>商品优惠价格:</td>
+								<td><p>优惠数量 <input type="text" class="hy">
+ 优惠价格 <input type="text" class="hy"></p>
+<p>购买数量达到优惠数量时享受的优惠价格</p></td>
+							</tr>
+							<tr>
+								<td>市场售价:</td>
+								<td><input type="text" class="txt" id="bazaarprice"></td>
+							</tr>
+							<tr>
+								<td>虚拟销量:</td>
+								<td><input type="text" class="txt" id="sales"></td>
+							</tr>
+							<tr>
+								<td>赠送消费积分数:</td>
+								<td><input type="text" class="txt" id="integral"></td>
+							</tr>
+							<tr>
+								<td>赠送等级积分数:</td>
+								<td><input type="text" class="txt" id="integral2"></td>
+							</tr>
+							<tr>
+								<td>积分购买金额:</td>
+								<td><input type="text" class="txt"></td>
+							</tr>
+							<tr>
+								<td>促销价:</td>
+								<td><input type="text" class="txt"></td>
+							</tr>
+							<tr>
+								<td>促销日期:</td>
+								<td><input type="text" class="txt"><input type="button" value="选择" class="add"><input type="text" class="txt"><input type="button" value="选择" class="add"></td>
+							</tr>
+							<tr>
+								<td>上传商品图片:</td>
+								<td><p><input type="file" value="选择文件"></p><input type="text"></td>
+							</tr>
+							<tr>
+								<td>上传商品缩略图:</td>
+								<td><p><input type="file" value="选择文件"></p><input type="text"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="submit" value="确定" class="qdcz" onclick="regist()"><input type="reset" value="重置" class="qdcz"></td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+		</div>
+	</body>
+	<script type="text/javascript" src="/javascripts/jquery.min.js" ></script>
+	<script type="text/javascript" src="/javascripts/shop_add.js" ></script>
+</html>
+<script type="text/javascript">
+	function regist() {
+		$.ajax({
+			url: "/api/shop_pdd",
+			type: "post",
+			data: {
+				comname: $("#comname").val(),
+				num: $("#num").val(),
+				age: $("#age").val(),
+				category: $("#category").val(),
+				brand: $("#brand").val(),
+				ourprice: $("#ourprice").val(),
+				bazaarprice: $("#bazaarprice").val(),
+				sales: $("#sales").val(),
+				integral: $("#integral").val(),
+				integral2: $("#integral2").val(),
+			},
+			success: function(res) {
+				console.log(res);
+				if(res.code == 1) {
+					alert(res.message);
+//					console.log(res.message);
+				} else {
+//					console.log(res.message);
+					alert(res.message);
+				}
+			}
+		})
+	}
+	
+</script>

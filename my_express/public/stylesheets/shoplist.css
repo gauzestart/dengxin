@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.p1{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+}
+.p1 b{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	float: left;
+	padding-right: 15px;
+}
+.p1 img{
+	float: left;
+}
+.p1 a{
+	float: right;
+	height: 26px;
+	line-height: 26px;
+	background: #c43926;
+	display: block;
+	font-size: 14px;
+	color:#fff;
+	padding: 0 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.fenlei {
+	margin: 10px 0;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	background: url(http://www.doudoufei.top/shops/admin/images/th_bg.gif);
+	border: 1px solid #ddd;
+}
+.fenlei img{
+	margin-right: 5px;
+}
+.fenlei select{
+	margin-right: 5px;
+}
+.fenlei select:nth-of-type(1){
+	width: 158px;
+}
+.fenlei select:nth-of-type(2){
+	width: 105px;
+}
+.fenlei select:nth-of-type(3){
+	width: 72px;
+}
+.fenlei select:nth-of-type(4){
+	width: 50px;
+}
+.fenlei span{
+	font-size: 12px;
+	color: #808080;
+	margin-right: 5px;
+}
+.fenlei input:nth-of-type(1){
+	width: 105px;
+	margin-right: 5px;
+}
+.fenlei .btn{
+	padding: 5px 15px 5px;
+	border: none;
+	border-radius: 3px;
+	background: #ff3f3f;
+	color: #fff;
+	cursor: pointer;
+}
+table{
+	width: 100%;
+	margin:0 auto; 
+	border-collapse:collapse; 
+	cellspacing:0; 
+	border:0;
+	background: #fff;
+}
+table tbody tr{
+	height: 45px;
+	width: 100%;
+	font-size: 12px;
+	border-left:  1px solid #ccc;
+	border-bottom:  1px solid #ccc;
+}
+table tbody .tr1 th{
+	background: url(http://www.doudoufei.top/shops/admin/images/th_bg.gif);
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+table tbody .tr1 th:nth-of-type(1) input{
+	margin-right: 5px;
+}
+tr th,tr td{ padding:0px; }
+table tbody .tr1 td{
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.tb2 tbody tr{
+}
+.tb2 tbody tr td{
+	text-align: right;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding-right: 20px;
+}
+.tb2 tbody tr td .onepage{
+	width: 30px;
+	margin-right: 5px;
+}
+.tb2 tbody tr td a{
+	margin: 0 5px;
+	color: #000;
+}

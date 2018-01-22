@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.p1{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+}
+.p1 b{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	float: left;
+	padding-right: 15px;
+}
+.p1 img{
+	float: left;
+}
+.p1 a{
+	float: right;
+	height: 26px;
+	line-height: 26px;
+	background: #c43926;
+	display: block;
+	font-size: 14px;
+	color:#fff;
+	padding: 0 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.fenye{
+	overflow: hidden;
+	background: #efefef;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+}
+.fenye li{
+	float: left;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	color: #787878;
+	font-size: 14px;
+	cursor: pointer;
+}
+.fenye .white{
+	background: #fff;
+}
+.ol1{
+	background: #fff;
+}
+.ol1 li .tab2{
+	width: 100%;
+	padding-top: 15px;
+	font-size: 14px;
+	color: #333;
+}
+.ol1 li .tab2 tbody tr{
+	height: 40px;
+}
+.ol1 li .tab2 tbody tr td:nth-of-type(1){
+	width:30%;
+	text-align: right;
+	font-weight: bold;
+	padding-right: 20px;
+} 
+.ol1 li .tab2 tbody tr td:nth-of-type(2){
+	font-size: 12px;
+	color: #666;
+	line-height: 30px;
+} 
+input{
+	margin-right: 5px;
+	height: 22px;
+}
+
+.txt{
+	width: 150px;
+}
+.hy{
+	width: 70px;
+}
+.add{
+	background: #ff3f3f;
+	width: 60px;
+	height: 28px;
+	border: 0;
+	color: #fff;
+	border-radius: 3px;
+}
+.qdcz{
+	width: 70px;
+	height: 28px;
+	background: #ff3f3f;
+	border: 0;
+	color: #fff;
+	border-radius: 3px;
+}

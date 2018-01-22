@@ -1,0 +1,67 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.p1{
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+	padding: 7px 10px;
+}
+.p1 b{
+	font-weight: normal;
+	color: #333;
+}
+.p2{
+	padding: 10px 10px;
+	font-size: 14px;
+	color: #c00;
+	border-bottom: 1px solid #333;
+	
+}
+.p2 span{
+	color: #335B64;
+}
+.thisday{
+	/*overflow: hidden;*/
+	margin-top: 10px;
+}
+.thisday ol{
+	min-width: 1000px;
+}
+.thisday ol li{
+	float: left;
+    margin-left: 1%;
+    width: 24.24%;
+    background: #27a9e3;
+    height: 80px;
+    min-width: 187px;
+    position: relative;
+    text-align: right;
+}
+.thisday ol li img{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.thisday ol li p{
+	padding-right: 15px;
+	padding-top: 15px;
+	font-size: 14px;
+	color: #fff;
+}
+.thisday ol li b{
+	padding-right: 15px;
+	margin-top: 5px;
+	font-size: 22px;
+	color: #fff;
+	display: block;
+}
+.thisday ol li:nth-of-type(1){
+    margin-left: 0%;
+}

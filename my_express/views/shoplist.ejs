@@ -1,0 +1,158 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/stylesheets/shoplist.css" />
+	<body>
+		<p class="p1"><b>ECSHOP管理中心 - 商品列表</b><img src="http://www.doudoufei.top/shops/admin/images/jnsy.png"><a class="newcom">添加新商品</a></p>
+		<div class="fenlei">
+			<img src="http://www.doudoufei.top/shops/admin/images/icon_search.gif" />
+			<select>
+				<option>所有分类</option>
+				<option>钻石</option>
+				<option>裤子</option>
+				<option>休闲裤</option>
+				<option>休闲短裤</option>
+				<option>牛仔裤</option>
+				<option>西裤</option>
+				<option>牛仔中裤</option>
+				<option>休闲分裤</option>
+				<option>衬衫</option>
+				<option>短袖衬衫</option>
+				<option>长袖衬衫</option>
+				<option>外套</option>
+				<option>棉服</option>
+				<option>风衣</option>
+				<option>羽绒服</option>
+				<option>大衣</option>
+				<option>皮衣/皮草</option>
+				<option>夹克</option>
+				<option>西服</option>
+				<option>卫衣</option>
+				<option>内衣</option>
+				<option>内裤</option>
+				<option>内衣/套装</option>
+				<option>袜子</option>
+				<option>家居服</option>
+				<option>POLO衫</option>
+				<option>短袖POLO衫</option>
+				<option>长袖POLO衫</option>
+			</select>
+			<select>
+				<option>所有品牌</option>
+				<option>kk</option>
+				<option>溢彩年华</option>
+				<option>EVENY</option>
+				<option>圣迪奥</option>
+				<option>韩都衣舍</option>
+				<option>betu百图</option>
+				<option>艾夫斯</option>
+				<option>太平鸟</option>
+				<option>O.SA</option>
+				<option>空间大师</option>
+				<option>美好家</option>
+				<option>生活诚品</option>
+				<option>帮宝适</option>
+				<option>贝亲</option>
+				<option>雅培</option>
+				<option>好事达</option>
+				<option>千弘</option>
+				<option>美亿佳</option>
+				<option>大豪</option>
+				<option>宝优妮</option>
+			</select>	
+			<select>
+				<option>全部</option>
+				<option>精品</option>
+				<option>新品</option>
+				<option>热销</option>
+				<option>特价</option>
+				<option>全部推荐</option>
+			</select>
+			<select>
+				<option>全部</option>
+				<option>上架</option>
+				<option>下架</option>
+			</select>
+			<span>关键词</span>
+			<input type="text"/>
+			<input type="button" value="搜索" class="btn"/>
+		</div>
+		<table class="tb1">
+			<tbody>
+				<tr class="tr1">
+					<th><input type="checkbox">编号</th>
+					<th>商品名称</th>
+					<th>货号</th>
+					<th>价格</th>
+					<th>上架</th>
+					<th>精品</th>
+					<th>新品</th>
+					<th>热销</th>
+					<th>推荐排序</th>
+					<th>库存</th>
+					<th>虚拟销量</th>
+					<th>操作</th>
+				</tr>
+				
+				
+			</tbody>
+		</table>
+		<table class="tb2">
+			<tbody>
+				<tr class="pages">
+					<td>
+						总共<span>0</span>个记录，分为<span>1</span>页，当前第<span>1</span>页，每页<input type="text" class="onepage"/>
+						<i>|</i>
+						<a href="javascript:void(0)">第一页</a>
+						<a href="javascript:void(0)">上一页</a>
+						<a href="javascript:void(0)">下一页</a>
+						<a href="javascript:void(0)">最末页</a>
+						<select>
+							<option>1</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	(function(){
+		$.ajax({
+			url:"/goods",
+			type:"get",
+			data:{},
+			success:function(res){
+				console.log(res);
+				var a=1;
+				var l=res.length;
+				for(i=0;i<l;i++){
+					console.log(res[i])
+					var str=`<tr class="tr1">
+						<td><input type="checkbox">a</td>
+						<td>${res[i].comname}</td>
+						<td>${res[i].num}</td>
+						<td>${res[i].ourprice}</td>
+						<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif"/></td>
+						<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif"/></td>
+						<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif"/></td>
+						<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif"/></td>
+						<td>1</td>
+						<td>1000</td>
+						<td>${res[i].sales}</td>
+						<td>
+							<a href="javascript:void(0)"><img src="http://www.doudoufei.top/shops/admin/images/icon_view.gif"/></a>
+							<a href="javascript:void(0)"><img src="http://www.doudoufei.top/shops/admin/images/icon_edit.gif"/></a>
+							<a href="javascript:void(0)"><img src="http://www.doudoufei.top/shops/admin/images/icon_copy.gif"/></a>
+							<a href="javascript:void(0)"><img src="http://www.doudoufei.top/shops/admin/images/icon_trash.gif"/></td></a>
+					</tr>`;
+					$(".tb1 tbody").append(str);
+				}
+			}
+		})
+	})
+</script>
